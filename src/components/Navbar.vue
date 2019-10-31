@@ -1,11 +1,11 @@
 <template>
     <header>
-      <div id="nav">
+      <nav id="nav">
         <router-link to="/">Top</router-link> |
         <router-link to="/about">About</router-link> |
         <router-link to="/skills">Skills</router-link> |
         <router-link to="/works">Works</router-link>
-      </div>
+      </nav>
     </header>
 </template>
 
