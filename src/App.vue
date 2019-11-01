@@ -1,12 +1,12 @@
 <template>
-<div class="text-center">
-  <header>
-    <Navbar/>
-  </header>
-  <div id="app">
-    <router-view/>
-  </div>
-</div>  
+  <div class="text-center">
+    <header>
+      <Navbar/>
+    </header>
+    <div id="app">
+      <router-view/>
+    </div>
+  </div>  
 </template>
 
 <script>
