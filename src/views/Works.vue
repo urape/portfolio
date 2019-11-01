@@ -3,20 +3,19 @@
     <h1>Works</h1>
     <b-row class="content">
       <Mercari/>
-      <b-col md="3" cols="12">
-          <h3>next work</h3>
-          <b-img src="@/assets/images/comming.jpg" alt="mercari-top" thumbnail fluid></b-img>
-      </b-col>
+      <Comming/>
     </b-row>
   </b-container>
 </template>
 
 <script>
 import Mercari from '@/components/works/Mercari'
+import Comming from '@/components/works/Comming'
 
 export default {
   components: {
-    Mercari
+    Mercari,
+    Comming
   },
   data() {
     return {
