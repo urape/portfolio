@@ -3,7 +3,7 @@
       <h1>Skills</h1>
       <b-row class="content">
         <b-col md="4" cols="12">
-          <ul id="lang1">
+          <ul>
             <h3>Lang</h3>
             <li v-for="lang in langs" :key="lang.id">{{ lang.name }}</li>
           </ul>

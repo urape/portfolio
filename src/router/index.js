@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Top from '@/views/Top.vue'
-import About from '@/views/About.vue'
+import Careers from '@/views/Careers.vue'
 import Skills from '@/views/Skills.vue'
 import Works from '@/views/Works.vue'
 
@@ -15,9 +15,9 @@ const routes = [
     component: Top
   },
   {
-    path: '/about',
-    name: 'about',
-    component: About
+    path: '/careers',
+    name: 'careers',
+    component: Careers
   },
   {
     path: '/skills',

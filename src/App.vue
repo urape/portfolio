@@ -30,10 +30,15 @@ body {
   color: #2c3e50;
   }
 
-  .box {
-    min-height: 400px;
-    height: auto !important;
-    position: relative;
-  }
+ul{
+  padding: 0;
+  list-style: none outside;
+}
+
+.box {
+  min-height: 400px;
+  height: auto !important;
+  position: relative;
+}
 
 </style>

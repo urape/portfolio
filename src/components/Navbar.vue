@@ -2,7 +2,7 @@
     <header>
       <nav id="nav">
         <router-link to="/">Top</router-link> |
-        <router-link to="/about">About</router-link> |
+        <router-link to="/careers">Careers</router-link> |
         <router-link to="/skills">Skills</router-link> |
         <router-link to="/works">Works</router-link>
       </nav>

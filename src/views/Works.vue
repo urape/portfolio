@@ -34,11 +34,7 @@ export default {
 }
 </script>
 
-<style>
-ul{
-  padding: 0;
-  list-style: none outside;
-}
+<style scoped>
 
 li{
   padding: 0;
