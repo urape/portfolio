@@ -60,7 +60,7 @@ export default {
         { name: 'HTML' },
         { name: 'CSS' },
         { name: 'MySQL' },
-        { name: 'Composer' },
+        { name: 'AWS S3' },
         { name: 'Heroku' }
       ]
     }
