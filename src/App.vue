@@ -6,6 +6,7 @@
     <div id="app">
       <router-view/>
     </div>
+    <footer></footer>
   </div>  
 </template>
 
@@ -30,9 +31,13 @@ body {
   color: #2c3e50;
   }
 
-ul{
+ul {
   padding: 0;
   list-style: none outside;
+}
+
+footer {
+  min-height: 50px;
 }
 
 .box {
