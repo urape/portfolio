@@ -182,14 +182,14 @@ export default ({
   }
 
   .item-border {
-    border-right: solid 2px #28A746;
+    border-right: solid 2px #41B883;
   }
 
   .circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #28A746;
+    background: #41B883;
     position: absolute;
     top: 0;
     right: 0;
