@@ -1,11 +1,10 @@
 <template>
-  <b-container class="box w-90" fluid>
+  <b-container class="box w-90" fuild>
     <h1>Careers</h1>
-    <b-row v-for="career in careers" :key="career.id" class="content">
-      <b-col md="1"></b-col>
-      <b-col md="5" cols="12">
-        <div v-if="career.id % 2 !== 0">
-          <h5 class="m-0">{{ career.title }}</h5>
+    <b-row v-for="career in careers" :key="career.id" class="content item">
+      <p class="circle"></p>
+      <b-col md="6" cols="12" class="item-border">
+        <b-card v-if="career.id % 2 !== 0" v-bind:header="career.title">
           <span>{{ career.term }}</span>
           <b-row>
             <b-col md="6" cols="12">
@@ -25,11 +24,10 @@
               </ul>
             </b-col>
           </b-row>
-        </div>
+        </b-card>
       </b-col>
-      <b-col md="5" cols="12">
-        <div v-if="career.id % 2 === 0">
-          <h5 class="m-0">{{ career.title }}</h5>
+      <b-col md="6" cols="12">
+        <b-card v-if="career.id % 2 === 0" v-bind:header="career.title">
           <span>{{ career.term }}</span>
           <b-row>
             <b-col md="6" cols="12">
@@ -49,7 +47,7 @@
               </ul>
             </b-col>
           </b-row>
-        </div>
+        </b-card>
       </b-col>
     </b-row>
   </b-container>
@@ -156,6 +154,9 @@ export default ({
 </script>
 
 <style scoped>
+.card-body {
+  padding: 5px;
+}
 .content {
   padding-top: 10px;
 }
@@ -164,10 +165,43 @@ export default ({
   width: 90%;
 }
 
-.row-2{
+.row-2 {
   padding: 0;
   float: left;
   width: 50%;
   list-style: none;
 }
+
+@media (min-width:768px) {
+  .row {
+    padding: 0px;
+  }
+
+  .item {
+    position: relative;
+  }
+
+  .item-border {
+    border-right: solid 2px #28A746;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #28A746;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width:767px) { 
+  .item-border {
+    height: 0px;
+  }
+ }
 </style>
