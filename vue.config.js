@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: '/portfolio/',
     outputDir: 'docs',
     chainWebpack: config => {
         config.module
