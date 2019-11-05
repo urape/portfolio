@@ -1,5 +1,5 @@
 <template>
-  <b-container class="box">
+  <b-container id="#works" class="box">
     <h1>Works</h1>
     <b-row class="content">
       <Mercari/>
@@ -34,9 +34,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
-li{
+<style>
+.row-2{
   padding: 0;
   float: left;
   width: 50%;

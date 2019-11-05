@@ -28,23 +28,13 @@
            <b-col md="6" cols="12">
              <h4>Function</h4>
              <ul>
-               <li>ユーザー認証</li>
-               <li>出品、編集、削除</li>
-               <li>商品検索</li>
-               <li>いいね</li>
+               <li v-for="func in funcs" :key="func.id">{{ func.name }}</li>
              </ul>
            </b-col>
            <b-col md="6" cols="12">
              <h4>Tool</h4>
              <ul>
-               <li>Laravel6</li>
-               <li>Bootstrap4</li>
-               <li>jQuery</li>
-               <li>HTML</li>
-               <li>CSS</li>
-               <li>Composer</li>
-               <li>MySQL</li>
-               <li>Heroku</li>
+               <li class="row-2" v-for="tool in tools" :key="tool.id">{{ tool.name }}</li>
              </ul>
            </b-col>
          </b-row>
@@ -52,3 +42,28 @@
     </b-modal>
   </b-col>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      funcs: [
+        { name: 'ユーザー認証' },
+        { name: '商品出品、編集、削除' },
+        { name: '商品検索' },
+        { name: 'いいね' }
+      ],
+      tools: [
+        { name: 'Laravel6' },
+        { name: 'Bootstrap4' },
+        { name: 'jQuery' },
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'MySQL' },
+        { name: 'Composer' },
+        { name: 'Heroku' }
+      ]
+    }
+  }
+}
+</script>
