@@ -27,7 +27,7 @@
         </b-card>
       </b-col>
       <b-col md="6" cols="12">
-        <b-card v-if="career.id % 2 === 0" v-bind:header="career.title">
+        <b-card v-if="career.id % 2 === 0" v-bind:header="career.title" class="hoge">
           <span>{{ career.term }}</span>
           <b-row>
             <b-col md="6" cols="12">
@@ -200,10 +200,4 @@ export default ({
     margin: auto;
   }
 }
-
-@media (max-width:767px) { 
-  .item-border {
-    height: 0px;
-  }
- }
 </style>
