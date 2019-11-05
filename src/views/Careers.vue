@@ -76,15 +76,17 @@ export default ({
           title: '製造メーカー　生産管理システム保守',
           term: '2018/05 ~ 2018/09',
           contents: [
-            { item: '定周期ジョブの監視' },
             { item: 'ジョブ監視、リカバリ' },
+            { item: 'イントラサイト修正' },
             { item: 'ヘルプデスク対応' }
           ],
           tools: [
-            { item: 'PL/SQL' },
             { item: 'Oracle EBS' },
             { item: 'Oracle 11g' },
+            { item: 'PL/SQL' },
             { item: 'JP1' },
+            { item: 'HTML' },
+            { item: 'CSS' },
             { item: 'FFFTP' },
             { item: 'Mantis Bug Tracker' }
           ]
