@@ -5,7 +5,7 @@
     <router-link to="/skills">Skills</router-link> |
     <router-link to="/works">Works</router-link>
     <div class="d-inline icon">
-      <a href="https://github.com/urape/portfolio"><font-awesome-icon :icon="['fab', 'github-square']"/></a>
+      <a href="https://github.com/urape/portfolio"><i class="fab fa-github"></i></a>
     </div>
   </nav>
   
