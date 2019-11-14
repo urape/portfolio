@@ -3,6 +3,7 @@
     <h1>Works</h1>
     <b-row class="content">
       <Mercari/>
+      <Portfolio/>
       <Comming/>
     </b-row>
   </b-container>
@@ -10,11 +11,13 @@
 
 <script>
 import Mercari from '@/components/works/Mercari'
+import Portfolio from '@/components/works/Portfolio'
 import Comming from '@/components/works/Comming'
 
 export default {
   components: {
     Mercari,
+    Portfolio,
     Comming
   },
   data() {
@@ -53,6 +56,7 @@ export default {
   height: 210px;
   object-fit: cover;
 }
+
 .content {
   padding-top: 10px;
 }
