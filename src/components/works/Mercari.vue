@@ -21,7 +21,7 @@
                <span>を模倣しクローンサイトを作成しました。</span>
              </p>
              <p class="m-0">
-               <a href="https://mercariclone.herokuapp.com/top">Website</a> |
+               <span>Website(サーバー停止中)</span> |
                <a href="https://github.com/urape/mercariClone">Github</a>
              </p>
            </b-col>
